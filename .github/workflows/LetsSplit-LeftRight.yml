@@ -9,6 +9,8 @@ on:  ['workflow_dispatch']
 
 jobs:
   initialize-firmware:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false 
